@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hotel Booking Portal</title>
+</head>
+
+<body>
+
+    <!-- ***********************************navbar********************************************88 -->
+
+    <nav class="navbar">
+        <div class="Boxwrapper navbar-container">
+            <div class="checkbox">
+
+            </div>
+
+
+            <div class="logo">
+                <h1>- HNBGU -</h1>
+            </div>
+
+            <ul class="item-list">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#gallery">Gallery</a></li>
+                <li class="item"><a href="#services">Services</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ***********************************header area********************************************88 -->
+
+    <div class="header">
+        <div class="content container">
+            <div class="textbox">
+                <h1 class="headerb-font">WELCOME TO HNBGU</h1>
+                <p class="headers-font">Book Our Rooms According To Your Needs</p>
+                <a class="p-btn" id="openForm">Check Availability</a>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--************************* availabiltyy section ********************************** -->
+
+
+    <div id="formContainer">
+        <form action="#" method="post">
+            <h2>Book Your Room </h2>
+
+            <div class="form-flex">
+                <div class="first-side">
+                    <label for="checkin">Check-In Date:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+
+                    <label for="checkout">Check-Out Date:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+
+                    <label class="dropdown" for="roomtype">Type of Room:</label>
+                    <select class="dropdown" id="roomtype" name="roomtype" required>
+                        <option value="">Select a room type</option>
+                        <option value="single">Single Room</option>
+                        <option value="double">Double Room</option>
+                    </select><br>
+                </div>
+            </div>
+
+            <div class="btn-cls">
+                <button type="submit"><a href="./roomlist.html" d>Submit</a></button>
+                <button id="closeForm">Close</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- <div id="formContainer">
+        <form action="#" method="post">
+            <h2>Book Your Room </h2>
+            <div class="form-flex">
+                <div class="first-side">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                    <label class="dropdown" for="roomtype">Type of Room:</label>
+                    <select class="dropdown" id="roomtype" name="roomtype" required>
+                        <option value="">Select a room type</option>
+                        <option value="single">Single Room</option>
+                        <option value="double">Double Room</option>
+                    </select><br>
+                </div>
+
+                <div class="second-side">
+
+                    <label for="address">Address:</label>
+                    <!-- <textarea id="address" name="address" placeholder="Enter your address"></textarea> -->
+    <!-- <input type="text" class="address" name="address" placeholder="Enter your address" required>
+
+    <label for="checkin">Check-In Date:</label>
+    <input type="date" id="checkin" name="checkin" required>
+
+    <label for="checkout">Check-Out Date:</label>
+    <input type="date" id="checkout" name="checkout" required>
+    </div>
+    </div>
+    <div class="btn-cls">
+        <button type="submit"><a href="./html/roomlist.html" d>Submit</a></button>
+        <button id="closeForm">Close</button>
+    </div>
+    </form>
+    </div> --> -->
+
+
+
+
+
+    <!-- ********************about us section ********************** -->
+
+
+    <section class="course" id="services">
+        <h1>OUR SERVICES</h1>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>ROOMS</h3>
+            </div>
+            <div class="course-col">
+                <h3>FOOD & DRINKS </h3>
+
+            </div>
+            <div class="course-col">
+                <h3>SAFETY & GUIDE</h3>
+
+            </div>
+            <div class="course-col">
+                <h3>MORE</h3>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ***************************** gallery section ******************************* -->
+    <section class="gallery course" id="gallery">
+
+    
+        <h1>Gallery</h1>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur.</p> -->
+        <div class="row">
+            <div class="course-col">
+                <h3>first image </h3>
+
+            </div>
+            <div class="course-col">
+                <h3>second image</h3>
+
+            </div>
+            <div class="course-col">
+                <h3>third image</h3>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ********************about us section ********************** -->
+
+    <section class="course">
+
+        <h1>ABOUT US</h1>
+
+
+        <section class="showcase">
+            <div class="container">
+                <div class="item first">
+                    <div class="left img">
+                        <img src="../images/building-image.jpg" alt="Sorry cant load image">
+                    </div>
+                    <article class="right textbox">
+                        <h2 class="text-dark">deganvy, u.k</h2>
+                        <p class="text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam temporibus,
+                            maiores possimus fugiat, optio earum, ullam ab omnis error odio sed officiis dolorum
+                            repellat
+                            sint lorem lorem.....</p>
+                        <a class="btn secondary-btn res" href="#">more</a>
+                    </article>
+                </div>
+
+                <div class="item second">
+                    <div class="right img">
+                        <img src="../images/food-menu1.jpg" alt="Sorry cant laod image">
+                    </div>
+                    <article class="left textbox">
+                        <h2 class="text-dark">desert, egypt</h2>
+                        <p class="text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam temporibus,
+                            maiores possimus fugiat, optio earum, ullam ab omnis error odio sed officiis dolorum
+                            repellat
+                            sint lorem lorem.....</p>
+                        <a class="btn secondary-btn res" href="#">more</a>
+                    </article>
+                </div>
+
+                <div class="item first">
+                    <div class="left img">
+                        <img src="../images/building-image.jpg" alt="Sorry cant load image">
+                    </div>
+                    <article class="right textbox">
+                        <h2 class="text-dark">deganvy, u.k</h2>
+                        <p class="text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam temporibus,
+                            maiores possimus fugiat, optio earum, ullam ab omnis error odio sed officiis dolorum
+                            repellat
+                            sint lorem lorem.....</p>
+                        <a class="btn secondary-btn res" href="#">more</a>
+                    </article>
+                </div>
+
+                <div class="item second">
+                    <div class="right img">
+                        <img src="../images/food-menu1.jpg" alt="Sorry cant laod image">
+                    </div>
+                    <article class="left textbox">
+                        <h2 class="text-dark">desert, egypt</h2>
+                        <p class="text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam temporibus,
+                            maiores possimus fugiat, optio earum, ullam ab omnis error odio sed officiis dolorum
+                            repellat
+                            sint lorem lorem.....</p>
+                        <a class="btn secondary-btn res" href="#">more</a>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+        <!-- ******************footer*********************************** -->
+        <div class="footer-section">
+            <div class="logo-section">
+                <h2 class="logo-text">HNBGU</h2>
+            </div>
+            <div class="imp-links">
+                <div class="legal">
+                    <h2>LEGAL</h2>
+                    <a href="https://www.themoviedb.org/documentation/api">
+                        <p>API overview</p>
+                    </a>
+                    <a href="https://www.themoviedb.org/documentation/api/terms-of-use">
+                        <p>API Terms of Use</p>
+                    </a>
+                    <a href="https://developers.themoviedb.org/3">
+                        <p>API documentation</p>
+                    </a>
+                </div>
+                <div class="sm-handles">
+                    <h2>IMPORTANT LINKS</h2>
+                    <a href="https://www.linkedin.com/in/abhishek-kumar-2b950a194/">
+                        <p>LinkedIn</p>
+                    </a>
+                    <a href="https://twitter.com/themoviedb?lang=en">
+                        <p>Twitter</p>
+                    </a>
+                    <a href="https://www.facebook.com/themoviedb/">
+                        <p>Facebook</p>
+                    </a>
+                    <a href="">
+                        <p>Instagram</p>
+                    </a>
+                </div>
+                <div class="register">
+                    <h2>Categories</h2>
+                    <a href="/movie">
+                        <p>Adventure</p>
+                    </a>
+                    <a href="/movie">
+                        <p>Action</p>
+                    </a>
+                    <a href="/movie">
+                        <p>Documentary</p>
+                    </a>
+                    <a href="/movie">
+                        <p>Many More to Explore</p>
+                    </a>
+                </div>
+            </div>
+            <div class="sm-handles-icon">
+                <a href="https://www.linkedin.com/in/abhishek-kumar-2b950a194/"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/themoviedb?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/themoviedb/"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="copyright-text">
+                <p class="confession">Made by HNBGU administration</p>
+                <p>Copyright © 2023, &nbsp all rights reserved to HNBGU.</p>
+            </div>
+        </div>
+
+</body>
+<script>
+    const openFormButton = document.getElementById("openForm");
+    const closeFormButton = document.getElementById("closeForm");
+    const formContainer = document.getElementById("formContainer");
+
+    openFormButton.addEventListener("click", function () {
+        formContainer.style.display = "block";
+    });
+
+    closeFormButton.addEventListener("click", function () {
+        formContainer.style.display = "none";
+    });
+
+</script>
+
+</html>

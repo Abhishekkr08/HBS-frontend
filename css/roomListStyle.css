@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;  /*we want 10px font size and also want responsive ness so percentages increases responsiveness so 62.5 is achieved using below  calc*/
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+a::selection{
+    background-color: rgb(15, 145, 15);
+    color: white;
+}
+
+body{
+   font-family: 'Poppins' , sans-serif;
+   line-height: 1.7;
+}
+
+
+/**************************************************** UTILITY CLASSES ********************************************** */
+.container{
+    /* border: 2px solid black; */
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar-container{
+    max-width: 1400px;
+    width: 95%;
+    margin: auto;
+}
+
+p{
+ color: #444;
+}
+
+
+.b-font{
+    font-size: 2.5rem;
+}
+
+.m-font{
+    font-size: 2rem;
+}
+
+.s-font{
+    font-size: 1.35rem;
+}
+
+.p-btn{
+    display: inline-block;
+    background-color: black;   
+    border-radius: 35px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 0.9em 1.5em;
+    margin-top: 0.4em;
+}
+
+
+/**************************************************** NAVBAR ********************************************** */
+.navbar{
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.87;
+    z-index: 999;
+    color: black;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.646);
+}
+
+.Boxwrapper{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox{
+    display: none;
+}
+
+.logo{
+    margin-left: 5em;
+    font-size: 1.2rem;
+}
+
+
+.item-list{
+    font-size: 1.5rem;
+    display: flex;  
+    justify-content: space-evenly;
+    width: 450px;
+    margin-right: 3em; 
+}
+
+.item-list li{
+    list-style: none;
+}
+
+.item-list li a{
+    text-decoration: none;
+    color: #444;  
+    font-weight: 500;
+    transition: color 180ms ease-in-out;
+} 
+
+.item-list a:hover{
+    color: rgb(19, 188, 19);
+}
+
+
+/* *************************** roomlist styling******************************** */
+
+
+.movies-list{
+    /* border: 2px solid red; */
+    /* min-height: 32vh; */
+    margin-top: 4.5em;
+}
+
+
+.movie-column{
+    /* border: var(--border2); */
+    /* max-width: 70% ; */
+    position: relative;
+    padding-top: 4px;
+    width: 100%;
+}
+
+.movie-item{
+    /* border: 1px solid rgba(0,0,0,0.17); */
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 2.2em;
+    width: 80%;
+    height: 200px;
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 15%);
+    border-radius: 8px;
+}
+
+.movie-imgbox{
+    /* border: 2px solid magenta; */
+    min-width: 110px;
+    background-color: #f5f5f5;
+}
+
+.movie-imgbox img{
+    border-radius: 8px 0px 0px 8px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.movie-textbox{
+    padding: 1.3em;
+    padding-top: 1em;
+    border-radius: 0px 8px 8px 0px;
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.movie-title{
+    /* border: 1px solid red; */
+    overflow-y: hidden;
+    height: 30px;
+}
+
+.movie-textbox.overview{
+  
+}
+
+.overview ul {
+    /* border: 2px solid magenta; */
+    /* font-size: 1.3rem; */
+    /* height: 50px; */
+    /* overflow-y: hidden; */
+    display: inline-block;
+    list-style: none;
+    margin-top: 5.75em;
+    text-decoration: none;  
+}
+
+.overview ul li{ 
+    border: 2px solid red;
+  list-style: disc;
+  text-decoration: none;  
+}
+
+.more .loadmore_btn{
+    margin-left: 36em;
+}
