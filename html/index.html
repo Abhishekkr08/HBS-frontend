@@ -31,7 +31,7 @@
                 <li class="item"><a href="#">Home</a></li>
                 <li class="item"><a href="#gallery">Gallery</a></li>
                 <li class="item"><a href="#services">Services</a></li>
-                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#about">About</a></li>
                 <li class="item"><a href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -39,18 +39,52 @@
 
     <!-- ***********************************header area********************************************88 -->
 
-    <div class="header">
-        <div class="content container">
+    <div class="slideshow-container">
+
+        <div class="content">
             <div class="textbox">
                 <h1 class="headerb-font">WELCOME TO HNBGU</h1>
                 <p class="headers-font">Book Our Rooms According To Your Needs</p>
                 <a class="p-btn" id="openForm">Check Availability</a>
-
-
-
             </div>
         </div>
+
+        <div class="slide">
+            <img src="../images/header-image2.jpg" alt="Image 1">
+            <div class="overlay"></div>
+        </div>
+        <div class="slide">
+            <img src="../images/food-menu1.jpg" alt="Image 1">
+            <div class="overlay"></div>
+        </div>
+        <div class="slide">
+            <img src="../images/building-image.jpg" alt="Image 1">
+            <div class="overlay"></div>
+        </div>
+        <div class="slide">
+            <img src="../images/bgrcampus.jpg" alt="Image 1">
+            <div class="overlay"></div>
+        </div>
+        <div class="slide">
+            <img src="../images/male-photo2.jpg" alt="Image 1">
+            <div class="overlay"></div>
+        </div>
+
+
+
+        
     </div>
+    
+    
+            <!-- ************************* count of user block********************************* -->
+            <div class="countOfUser">
+                <p class="head-line">
+                    Bookings done till now
+                </p>
+                <p class="users-number"> 40+</p>
+        
+            </div>
+
 
 
     <!--************************* availabiltyy section ********************************** -->
@@ -124,13 +158,12 @@
         <button id="closeForm">Close</button>
     </div>
     </form>
-    </div> --> -->
+    </div> -->
 
 
 
 
-
-    <!-- ********************about us section ********************** -->
+    <!-- ********************services section ********************** -->
 
 
     <section class="course" id="services">
@@ -160,29 +193,60 @@
     <!-- ***************************** gallery section ******************************* -->
     <section class="gallery course" id="gallery">
 
-    
+
         <h1>Gallery</h1>
         <!-- <p>Lorem ipsum dolor sit amet consectetur.</p> -->
         <div class="row">
-            <div class="course-col">
-                <h3>first image </h3>
-
+            <div class="img-col">
+                <div class="img-box">
+                    <img src="../images/food-menu1.jpg" alt="img">
+                </div>
             </div>
-            <div class="course-col">
-                <h3>second image</h3>
-
+            <div class="img-col">
+                <div class="img-box">
+                    <img src="../images/food-menu1.jpg" alt="img">
+                </div>
             </div>
-            <div class="course-col">
-                <h3>third image</h3>
-
+            <div class="img-col">
+                <div class="img-box">
+                    <img src="../images/food-menu1.jpg" alt="img">
+                </div>
             </div>
+            <div class="img-col">
+                <div class="img-box">
+                    <img src="../images/food-menu1.jpg" alt="img">
+                </div>
+            </div>
+            <div class="img-col">
+                <div class="img-box">
+                    <img src="../images/food-menu1.jpg" alt="img">
+                </div>
+            </div>
+
+            <div class="img-col">
+                <div class="img-box">
+                    <img src="../images/food-menu1.jpg" alt="img">
+                </div>
+            </div>
+            <div class="img-col">
+                <div class="img-box">
+                    <img src="../images/food-menu1.jpg" alt="img">
+                </div>
+            </div>
+            <div class="img-col">
+                <div class="img-box">
+                    <img src="../images/food-menu1.jpg" alt="img">
+                </div>
+            </div>
+
+
         </div>
     </section>
 
 
     <!-- ********************about us section ********************** -->
 
-    <section class="course">
+    <section class="course" id="about">
 
         <h1>ABOUT US</h1>
 
@@ -314,20 +378,68 @@
             </div>
         </div>
 
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const slides = document.querySelectorAll('.slide');
+                let currentSlide = 0;
+                let isTransitioning = false;
+
+                function showSlide() {
+                    slides.forEach((slide, index) => {
+                        if (index === currentSlide) {
+                            slide.style.opacity = '1';
+                            slide.style.transform = 'translateX(0%)';
+                        } else if (index < currentSlide) {
+                            slide.style.opacity = '1';
+                            slide.style.transform = 'translateX(-100%)';
+                        } else {
+                            slide.style.opacity = '0';
+                            slide.style.transform = 'translateX(100%)';
+                        }
+                    });
+                }
+
+                function nextSlide() {
+                    if (isTransitioning) {
+                        return;
+                    }
+                    isTransitioning = true;
+
+                    currentSlide++;
+                    if (currentSlide >= slides.length) {
+                        currentSlide = 0;
+                    }
+                    showSlide();
+
+                    setTimeout(() => {
+                        isTransitioning = false;
+                    }, 1000); // Transition duration
+                }
+
+                setInterval(nextSlide, 6000); // Change slide every 3 seconds
+
+                showSlide(); // Show initial slide
+            });
+
+
+
+            const openFormButton = document.getElementById("openForm");
+            const closeFormButton = document.getElementById("closeForm");
+            const formContainer = document.getElementById("formContainer");
+
+            openFormButton.addEventListener("click", function () {
+                formContainer.style.display = "block";
+            });
+
+            closeFormButton.addEventListener("click", function () {
+                formContainer.style.display = "none";
+            });
+
+
+
+
+        </script>
 </body>
-<script>
-    const openFormButton = document.getElementById("openForm");
-    const closeFormButton = document.getElementById("closeForm");
-    const formContainer = document.getElementById("formContainer");
-
-    openFormButton.addEventListener("click", function () {
-        formContainer.style.display = "block";
-    });
-
-    closeFormButton.addEventListener("click", function () {
-        formContainer.style.display = "none";
-    });
-
-</script>
 
 </html>
